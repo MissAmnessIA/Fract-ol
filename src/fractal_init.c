@@ -1,5 +1,10 @@
 #include "../inc/fractol.h"
 
+void	data_init(t_mlx *fractal)
+{
+	fractal->escape_value = 4;
+	fractal->iteration_definition = 42;
+}
 
 void	fractal_init(t_mlx *fractal)
 {
@@ -27,5 +32,5 @@ void	fractal_init(t_mlx *fractal)
 											&fractal->img.line_len,
 											&fractal->img.endian);
 	//events_init(fractal); // TO DO
-	//data_init(fractal); //TO DO
+	data_init(fractal);
 }
