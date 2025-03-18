@@ -12,6 +12,7 @@ int	ft_strncmp(char *s1, char *s2, int n)
 	}
 	return (*s1 - *s2);
 }
+
 void	putstr_fd(char *s, int fd)
 {
 	if (NULL == s || fd < 0)
@@ -22,6 +23,7 @@ void	putstr_fd(char *s, int fd)
 		putstr_fd(s + 1, fd);
 	}
 }
+
 double	atodbl(char *s)
 {
 	long	integer_part;

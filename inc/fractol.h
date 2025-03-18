@@ -36,6 +36,14 @@ typedef struct	s_complex
 	double	y;
 }				t_complex;
 
+typedef struct	s_map
+{
+	double	unscaled_n;
+	double	new_min;
+	double	new_max;
+	double	old_min;
+	double	old_max;
+}				t_map;
 
 
 typedef struct	s_img
@@ -53,7 +61,6 @@ typedef struct	s_fractal
 	void	*mlx_connection;
 	void	*mlx_window;
 	t_img	img;
-
 	double	escape_value;
 	int		iterations_defintion;
 	double	shift_x;
@@ -75,7 +82,7 @@ void		fractal_init(t_fractal *fractal);
 void		fractal_render(t_fractal *fractal);
 
 //*** math ***
-double		map(double unscaled_num, double new_min, double new_max, double old_min, double old_max);
+double		map(t_map map);
 t_complex	sum_complex(t_complex z1, t_complex z2);
 t_complex	square_complex(t_complex z);
 
