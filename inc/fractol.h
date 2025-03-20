@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fractol.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vmesa-ke <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/20 19:14:52 by vmesa-ke          #+#    #+#             */
+/*   Updated: 2025/03/20 19:14:59 by vmesa-ke         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
@@ -12,8 +23,8 @@
 # define ERROR_MESSAGE "Please enter \n\t\"./fractol mandelbrot\" \
 	or \n\t\"./fractol julia <value_1> <value_2>\"\n"
 
-# define WIDTH	800
-# define HEIGHT	800
+# define WIDTH	500
+# define HEIGHT	500
 
 # define BLACK       0x000000
 # define WHITE       0xFFFFFF

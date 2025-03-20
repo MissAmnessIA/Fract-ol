@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   events.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vmesa-ke <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/20 19:15:35 by vmesa-ke          #+#    #+#             */
+/*   Updated: 2025/03/20 19:15:39 by vmesa-ke         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "../inc/fractol.h"
 
 int	close_handler(t_fractal *fractal)
@@ -47,7 +58,7 @@ int	mouse_handler(int button, int x, int y, t_fractal *fractal)
 
 int	julia_track(int x, int y, t_fractal *fractal)
 {
-	if (!ft_strncmp(fractal->name, "julia", 5))
+	if (!ft_strncmp(fractal->name, "julia", 5) && 0)
 	{
 		fractal->julia_x = (map((t_map){x, -2, +2, 0, WIDTH}) * fractal->zoom)
 			+ fractal->shift_x;
